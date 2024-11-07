@@ -1,0 +1,32 @@
+.Pokemons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 50px;
+}
+
+.Offset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+.Previous {
+    width: 100px;
+}
+.Next {
+    width: 100px;
+}
+
+.Link {
+    text-align: center;
+}
+.Link a{
+    color: gray;
+}
