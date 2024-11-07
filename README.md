@@ -1,8 +1,12 @@
 # Pokédex.React
-This is a pokedex website developed with React and Typescript which shows you a good chunk of pokemons sourced From Pokeapi.
+My starter project to get acquainted with React - This is a pokedex website developed using React and Typescript which shows you up to 600 pokemons sourced from PokeAPI Proxy. 
 
+## Website Link:
+- https://djeffalkhaled.github.io/Pokedex.React/
 
 ## Libraries:
-- React + Vite
-- React-Bootstrap
+- <a href = "https://vite.dev/" style = "color: gray;">React + Vite </a>
+- <a href = "https://react-bootstrap.netlify.app/" style = "color: gray;">React-Bootstrap</a>
+- <a href = "https://pokeapi-proxy.freecodecamp.rocks/" style = "color: gray;">PokéAPI Proxy</a>
+
 
