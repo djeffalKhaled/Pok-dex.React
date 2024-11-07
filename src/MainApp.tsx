@@ -1,7 +1,6 @@
-import SearchInput from "./SearchInput.tsx"
 import Pokemon from "./Pokemon.tsx"
 import './style/MainApp.css'
-import { useRef, useState } from "react";
+import { useState } from "react";
 import NavBar from './NavBar.tsx'
 import Button from "react-bootstrap/Button";
 
