@@ -1,5 +1,5 @@
 # Pokédex.React
-My starter project to get acquainted with React - This is a pokedex website developed using React and Typescript which shows you up to 600 pokemons sourced from PokeAPI Proxy. 
+My starter project to get acquainted with React - This is a pokedex website developed using React and Typescript which shows you up to 900 pokemons sourced from PokeAPI Proxy. 
 
 ## Website Link:
 - [https://djeffalkhaled.github.io/Pokedex.React/](https://djeffalkhaled.github.io/Pokedex.React/)
