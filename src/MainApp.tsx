@@ -19,7 +19,7 @@ function MainApp() {
     }
   }
   function NextButton() {
-    if (offset < 500) {
+    if (offset < 800) {
       setOffsetPokemon(offset + 100);
       console.log("OFFSET: ", offset);
     }
