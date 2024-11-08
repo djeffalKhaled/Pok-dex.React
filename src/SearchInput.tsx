@@ -32,11 +32,11 @@ function SearchInput(props : InputProps) {
             <Form className = "Search">
                 <Form.Group className="mb-3 d-flex align-items-center"  controlId="exampleForm.ControlInput1">
                     <label htmlFor = "search-input" itemType = "text">{props.inputlabel}</label>
-                    <Input width = '30px' id = "search-input" ref = {inputRef} placeholder = {props.inputPlaceHolder} className = "SearchInput"></Input>
-                    <Button id = "search-button" onClick = {ButtonClicked} className = "SearchButtont">{props.buttonlabel}</Button>
+                    <Input width = '30px' ref = {inputRef} placeholder = {props.inputPlaceHolder} className = "SearchInput"></Input>
+                    <Button id = "search-button" onClick = {ButtonClicked} className = "SearchButton">{props.buttonlabel}</Button>
                 </Form.Group>
             </Form>
-            {showPokemon && <Pokemon name = {inputValue}/>}
+            {showPokemon && <Pokemon name = {inputValue}  className = "PokemonStatsContainer CenteredContainer"/>}
         </>
     );
 }

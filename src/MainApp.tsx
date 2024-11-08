@@ -3,6 +3,7 @@ import './style/MainApp.css'
 import { useState } from "react";
 import NavBar from './NavBar.tsx'
 import Button from "react-bootstrap/Button";
+import SearchInput from "./SearchInput.tsx";
 
 
 function MainApp() {
@@ -30,9 +31,10 @@ function MainApp() {
     <>
     
     <NavBar />
+    <SearchInput inputlabel = "" inputPlaceHolder = "Pokemon Name" buttonlabel = "Search" />
     <div className = "Pokemons">
         {Array.from({ length: 100 }, (_, index) => (
-            <Pokemon key={index + offset} name={`${index + offset}`} />
+            <Pokemon key={index + offset} name={`${index + offset}`} className = "PokemonStatsContainer"/>
         ))}
     </div>
     <div className = "Offset">
@@ -41,7 +43,7 @@ function MainApp() {
     </div>
     <div className = "Link"><a href = "https://github.com/djeffalKhaled">https://github.com/djeffalKhaled</a></div>
     
-    
+
     </>
   )
 }

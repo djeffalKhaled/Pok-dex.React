@@ -14,13 +14,16 @@ type Stats = {
     specialDefense: number
     speed: number
     types: string[]
+    className: string
 };
 
 // Defines the whole HTML structure of a pokemon's stat
 function PokemonStats(prompt : Stats) {
+
+
     return (
         <>
-        <div className="PokemonStatsContainer">
+        <div className={prompt.className} >
             <div className="PokemonSprite">
                 <img src = {prompt.sprite} alt={prompt.name}/>
             </div>
@@ -44,14 +47,17 @@ function PokemonStats(prompt : Stats) {
     )
 }
 
+
 type PokeName = {
     name: string;
+    className: string;
 }
 
 
 // Deals with the API call and finally defines the Pokemon Component
 function Pokemon(props: PokeName) {
     const [stats, setStats] = useState<Stats | null>(null);
+
 
     useEffect(() => {
         console.log("Searching for", props.name);
@@ -76,6 +82,7 @@ function Pokemon(props: PokeName) {
                     specialDefense: data.stats[4].base_stat,
                     speed: data.stats[5].base_stat,
                     types: data.types.map((type: any) => type.type.name), // transforms the map into a string
+                    className: props.className,
                 };
                 setStats(fetchedStats); // Update the state to rerender the pokemon component with the new val
             })
@@ -90,6 +97,6 @@ function Pokemon(props: PokeName) {
         return <div>Loading...</div>;
     }
 
-    return <PokemonStats {...stats} />;
+    return (<PokemonStats {...stats}/>)
 }
 export default Pokemon

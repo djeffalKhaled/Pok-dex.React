@@ -1,5 +1,5 @@
 .PokemonStatsContainer {
-    background-color: rgb(18, 18, 18);
+    background-color: rgba(18, 18, 18);
     color: white;
     display: flexbox;
     align-items: center;
@@ -8,15 +8,26 @@
     width: 20%;
     height: 500px;
     position: relative;
-    border-radius: 5%;
+
+    border-radius: 20px;
     border: 2px solid rgb(114, 0, 0);
     backdrop-filter: blur(25px);
+
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    will-change: transform;
     transition: 
-        border 1s ease,
-        opacity 1s ease, transform 1s ease !important;
+        border 2s ease,
+        opacity 1s ease, 
+        transform 0.5s ease !important;
 }
 .PokemonStatsContainer:hover {
     border: 2px solid rgb(255, 255, 255);
+    transform: translate(0%, -1%); 
+}
+
+.CenteredContainer {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

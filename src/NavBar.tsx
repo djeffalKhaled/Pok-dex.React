@@ -1,4 +1,3 @@
-import SearchInput from "./SearchInput.tsx"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -39,11 +38,10 @@ function NavBar() {
                 <NavDropdown title="About" id="navbarScrollingDropdown">
                 <NavDropdown.ItemText style={{width:'500px'}} >
                     This is a pokedex website showing you a good chunk of pokemons sourced
-                    From Pokeapi. Website developed using React and Typescript by: <Nav.Link href="https://github.com/djeffalKhaled">Djeffal Khaled</Nav.Link>
+                    From Pokeapi. Website developed using React and Typescript.
                 </NavDropdown.ItemText>
                 </NavDropdown>
             </Nav>
-            <SearchInput inputlabel = "" inputPlaceHolder = "Pokemon Name" buttonlabel = "Search" />
             </Navbar.Collapse>
         </Container>
         </Navbar>

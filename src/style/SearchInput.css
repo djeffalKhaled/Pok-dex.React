@@ -1,7 +1,26 @@
 
 .SearchInput {
-    width: 200px !important;
+    width: 15% !important;
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    margin-right: 120px;
+    margin-bottom: 55px;
 }
-.SearchButtont {
-    margin-left: 10px;
+.SearchButton {
+    margin-left: 230px;
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 55px;
+}
+@media (max-width: 990px){
+    /*Look I just don't have time ok lol*/
+    .SearchInput {
+        display: none;
+    }
+    .SearchButton {
+        display: none;
+    }
 }
